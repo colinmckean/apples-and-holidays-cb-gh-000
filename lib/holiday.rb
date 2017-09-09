@@ -64,7 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each {|holiday, supply|
     puts "  #{holiday.to_s.split('_').map {|w| w.capitalize }.join(' ')}: #{supply.join(', ')}"
   }
-    }
+}
 
 end
 
@@ -75,5 +75,4 @@ def all_holidays_with_bbq(holiday_hash)
    holidays.map {|holiday, supplies|
      holiday if supplies.include?("BBQ")
    }}.flatten.compact
-
 end
