@@ -61,11 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each{|season| {
     puts season
-    season.each{|holiday, supply|
-    puts holiday
-  supply.each{|thing|
-    puts thing
-    }}
     }}
 
 end
