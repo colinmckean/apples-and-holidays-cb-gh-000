@@ -74,5 +74,6 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map {|season, holidays|
    holidays.map {|holiday, supplies|
      holiday if supplies.include?("BBQ")
-   }}.flatten.compact
+   }
+ }.flatten.compact
 end
